@@ -16,15 +16,15 @@
         jqoid_preload.remove();
         tinyMCE.init({
           mode : 'exact',
-          plugins : "codemirror,kottiimage,link,advlist,textcolor,contextmenu,table,lists",
-          codemirror: {
-            // codemirror **plugin** config options
-            path: 'CodeMirror',
-            indentOnInit: false,
-            config: {
-              // codemirror config options
-            }
-          },
+          plugins : "code,kottiimage,link,advlist,textcolor,contextmenu,table,lists",
+          // codemirror: {
+          //   // codemirror **plugin** config options
+          //   path: 'CodeMirror',
+          //   indentOnInit: false,
+          //   config: {
+          //     // codemirror config options
+          //   }
+          // },
           elements: oid,
           strict_loading_mode : true,
           height: '${field.widget.height | None}',
